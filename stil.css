@@ -1,0 +1,632 @@
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.body1{
+  background-image: url('images/pozadina123.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.body2{
+  background-image: url('images/sadrzaj.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.body3{
+  background-image: url('images/tipovipozadina.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.body4{
+  background-image: url('images/body4.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.body5{
+  background-image: url('images/14.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.body6{
+  background-image: url('images/17.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    min-height: 10vh;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 20pt;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 14pt;
+}
+
+.nav-links a:hover {
+    color: lightblue;
+    border-bottom: 1px solid lightblue;
+    border-top: 1px solid lightblue;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: 0.8s ease;
+}
+
+.nav-links li .dropdown-content {
+    display: none;
+    padding-top: 20px;
+    min-width: 200px;
+    text-align: left;
+    position: absolute;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-links li:hover .dropdown-content {
+    display: block;
+    background-color: rgba(0,0,0,0.8);
+}
+.nav-links li:hover .dropdown-content a{
+	color: white;
+	font-size: 14pt;
+}
+.nav-links li:hover .dropdown-content a:hover{
+	color: lightblue;
+}
+
+main{
+  width: 80%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tipoviigrelista{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20pt;
+  color: #fff;
+  margin: 0px;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  text-shadow: 2px 2px black;
+  text-align: justify;
+}
+.tipoviigrelista li{
+  padding: 10px;
+}
+
+span{
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 50pt;
+  color: #fff;
+  margin: 0px;
+  text-align: center;
+  padding-top: 15px;
+  text-shadow: 5px 5px black;
+}
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-size: 40pt;
+  color: #fff;
+  float: left;
+  margin-left: 30px;
+  padding-top: 20px;
+  text-shadow: 5px 5px black;
+}
+p{
+  color: #fff;
+  text-shadow: 2px 2px black;
+  font-size: 30pt;
+  padding: 30px;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+}
+p::first-letter{
+  color: red;
+  font-style: italic;
+}
+.manjaslika1{
+  width: 300px;
+  height: auto;
+  float: right;
+  margin-left: 30px;
+  margin-right: 30px;
+  transition: 0.8s ease;
+}
+.manjaslika1:hover{
+  width: 500px;
+  height:auto;
+  transition: 0.8s ease-in-out;
+}
+.manjaslika2{
+  width: 300px;
+  height: auto;
+  float: left;
+  padding-left: 30px;
+  margin-right: 30px;
+  transition: 0.8s ease;
+}
+.manjaslika2:hover{
+  width: 500px;
+  height: auto;
+  transition: 0.8s ease-in-out;
+}
+.manjaslika3{
+  width: 400px;
+  height: auto;
+  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: 0.8s ease;
+}
+.manjaslika3:hover{
+  opacity: 1;
+  width: 600px;
+  transition: 0.8s ease-in-out;
+}
+
+#aktivan{
+  border-bottom: 1px solid lightblue;
+  border-top: 1px solid lightblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: lightblue;
+}
+.malilogo{
+  width: 150px;
+  height: auto;
+  float: right;
+  padding-left: 30px;
+  margin-right: 30px;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:transform .8s ease-in-out;
+}
+.malilogo:hover{
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+footer{
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  min-height: 10vh;
+}
+.povratak{
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 5px;
+  font-size: 20pt;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.povratak:hover{
+  border-top: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
+  color: lightblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.8s ease;
+}
+
+div.ikonice{
+  padding: 30px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.slicice-ikonice{
+  width: 25%;
+  margin: 20px;
+  opacity: 0.5;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+          transition:transform 0.8s ease-in-out;
+}
+.slicice-ikonice:hover{
+  opacity: 1;
+  transition: 0.8s ease;
+  -webkit-transform: rotate(360deg);
+}
+
+.slika-krug-fiora{
+	position: absolute;
+	-webkit-animation: animacija-thresh 10s linear infinite;
+  display: none;
+}
+
+.slika-krug{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	-webkit-animation: animacija-thresh 3s linear infinite;
+}
+.slika-krug1{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+  right: 10%;
+	-webkit-animation: animacija-thresh1 3s linear infinite;
+}
+
+@-webkit-keyframes animacija-thresh{
+  from
+  {
+      transform: rotate(0deg);
+  }
+  to
+  {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes animacija-thresh1{
+  from
+  {
+      transform: rotate(0deg);
+  }
+  to
+  {
+    transform: rotate(-360deg);
+  }
+}
+.valorant-div{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.valorant-div iframe{
+	margin: 10px;
+}
+
+.wrapper{
+  width: 70%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.wrapper .title h1{
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 25pt;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.kontakt-forma{
+  display: flex;
+}
+.input-fields, .poruka{
+  width: 50%;
+}
+
+.input-fields .input, .poruka textarea{
+  margin: 10px 10px;
+  background: none;
+  border: 0px;
+  border-bottom: 2px solid red;
+  padding: 10px;
+  color: white;
+  width: 85%;
+}
+
+.poruka textarea{
+  height: 186px;
+  border-right: 2px solid red;
+  border-left: 2px solid red;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background: darkred;
+    text-align: center;
+    padding: 15px;
+    font-size: 15pt;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.8s ease;
+}
+input[type="submit"]:hover{
+  background: red;
+  transition: 0.8s ease-in-out;
+}
+
+@media screen and (max-width: 1000px){
+    nav .logo{
+      font-size: 18pt;
+      position: absolute;
+      left: 10%;
+    }
+    nav{
+      height: 50vh;
+    }
+    nav .nav-links{
+      position: absolute;
+      text-align: center;
+      right: 0;
+      width: 30%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+    nav .nav-links a{
+      font-size: 12pt;
+    }
+    nav .nav-links a:hover{
+      border-top: none;
+      border-bottom: 1px solid lightblue;
+      border-top: 1px solid lightblue;
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
+    nav .nav-links li:hover .dropdown-content{
+    	position: absolute;
+    	top: 30%;
+    	right: 80%;
+    }
+
+    nav #aktivan{
+      color: #c554eb;
+      font-weight: bold;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      border-bottom: 1px solid #c554eb;
+      border-top: 1px solid #c554eb;
+    }
+    footer .povratak{
+      font-size: 10pt;
+    }
+    .kontakt-forma{
+    display: flex;
+    flex-direction: column;
+    }
+    .input-fields input{
+      height: 40px;
+    }
+    .poruka textarea{
+      height: 100px;
+    }
+    .input-fields, .poruka{
+      width: 100%;
+    }
+    .valorant-div iframe{
+    	width: 80%;
+      position: relative;
+    }
+    h1{
+      font-size: 30pt;
+      transition: 0.8s ease;
+    }
+    h3{
+      font-size: 25pt;
+      transition: 0.8s ease
+    }
+    p{
+      font-size: 18pt;
+      transition: 0.8s ease;
+    }
+    .wrapper .title h1{
+    	font-size: 18pt;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    main .manjaslika1, .manjaslika2{
+      width: 150px;
+      transition: 0.8s ease;
+    }
+    .manjaslika1:hover{
+      width: 250px;
+      transition: 0.8s ease-in-out;
+    }
+    .manjaslika2:hover{
+      width: 250px;
+      transition: 0.8s ease-in-out;
+    }
+    .manjaslika3{
+      width: 200px;
+      transition: 0.8s ease;
+    }
+    .manjaslika3:hover{
+      width: 300px;
+      transition: 0.8s ease-in-out;
+    }
+    .tipoviigrelista{
+      font-size: 15pt;
+    }
+    .malilogo{
+      width: 80px;
+    }
+    .slika-krug-fiora{
+      display: inline-block;
+      width: 150px;
+      height: auto;
+      margin: auto;
+    }
+    main .slika-krug, .slika-krug1{
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media screen and (max-width: 1000px){
+    .body1, .body2, .body3, .body4, .body5, .body6{
+      background-position: center;
+    }
+    #box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8,
+    #box9, #box10, #box11, #box12, #box13, #box14, #box15,{
+      background-position: center;
+      background-image: none;
+      background-color: blue;
+    }
+  }
+
+
+#box1{
+  height: 100vh;
+  width: 100%;
+  background-image: url('images/1.jpg');
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+}
+#box2{
+  height: 100vh;
+  width: 100%;
+  background-image: url('images/4.jpg');
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+}
+#box3{
+  height: 100vh;
+  width: 100%;
+  background-image: url('images/5.png');
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+}
+#box4{
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/3.jpg');
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box5{
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/8.png');
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box6{
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/9.jpg');
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box7{
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/10.jpg');
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box8{
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/11.jpg');
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box9{
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/cover1.jpg');
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box10{
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/cover.jpg');
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box11{
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/kayle.jpg');
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box12{
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/7.jpg');
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box13{
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/15.jpg');
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box14{
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/16.jpg');
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box15{
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/19.jpeg');
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
