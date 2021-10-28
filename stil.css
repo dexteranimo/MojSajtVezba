@@ -486,7 +486,7 @@ input[type="submit"]:hover{
       width: 80px;
     }
     .slika-krug-fiora{
-      display: inline-block;
+      display: block;
       width: 150px;
       height: auto;
       margin: auto;
