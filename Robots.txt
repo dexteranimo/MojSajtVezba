@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /images/
-Disallow: /ikonica/
-Disallow: /stil.css
